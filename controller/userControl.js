@@ -15,3 +15,7 @@ exports.SignupData = async (req, res) => {
   console.log("the data of the form", username);
   res.redirect("/LandingPage");
 };
+
+exports.renderHome = async (req,res) => {
+  res.render("/home")
+}
